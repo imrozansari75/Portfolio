@@ -19,7 +19,7 @@ const MainLayout = () => {
           </div>
 
           {/* ______ Right Panel (Scrollable Only Inside This) ______ */}
-          <div className="flex-1 overflow-y-auto px-10 py-8">
+          <div className="flex-1 overflow-y-auto px-10">
             <About />
             <Skills />
             <Jobs />

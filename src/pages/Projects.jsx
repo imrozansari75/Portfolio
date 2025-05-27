@@ -3,41 +3,42 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
 
-  const projects = [
-    {
-      title: "E-Commerce Dashboard",
-      description:
-        "A comprehensive dashboard for e-commerce businesses with real-time analytics, inventory management, and order processing capabilities.",
-      image: "/placeholder.svg?height=600&width=800",
-      technologies: ["React.js", "Tailwind CSS", "Chart.js", "Firebase"],
-      demoLink: "https://example.com/demo1",
-      githubLink: "https://github.com/username/project1",
-    },
-    {
-      title: "Social Media App",
-      description:
-        "A responsive social media application with features like user authentication, real-time messaging, post creation, and notifications.",
-      image: "/placeholder.svg?height=600&width=800",
-      technologies: ["React.js", "Node.js", "MongoDB", "Socket.io"],
-      demoLink: "https://example.com/demo2",
-      githubLink: "https://github.com/username/project2",
-    },
-    {
-      title: "Weather Forecast App",
-      description:
-        "A weather application that provides current conditions and 5-day forecasts for any location, with beautiful visualizations and responsive design.",
-      image: "/placeholder.svg?height=600&width=800",
-      technologies: ["React.js", "Tailwind CSS", "OpenWeather API"],
-      demoLink: "https://example.com/demo3",
-      githubLink: "https://github.com/username/project3",
-    },
-  ]
+ const projects = [
+  {
+    title: "Fitness Club Website",
+    description:
+      "A responsive fitness club website showcasing various fitness programs, trainers, and membership plans.",
+    image: "/placeholder.svg?height=600&width=800",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    demoLink: "https://github.com/imrozansari75/Fitness-Club-Website",
+    githubLink: "https://github.com/imrozansari75/Fitness-Club-Website",
+  },
+  {
+    title: "Stock Market Card",
+    description:
+      "A dynamic card component displaying real-time stock market data with interactive charts.",
+    image: "/placeholder.svg?height=600&width=800",
+    technologies: ["React.js", "Tailwind CSS", "Chart.js"],
+    demoLink: "https://github.com/imrozansari75/Stock-Market-Card",
+    githubLink: "https://github.com/imrozansari75/Stock-Market-Card",
+  },
+  {
+    title: "Weather App",
+    description:
+      "A web application providing current weather information for various locations using a weather API.",
+    image: "/placeholder.svg?height=600&width=800",
+    technologies: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API"],
+    demoLink: "https://github.com/imrozansari75/Weather-App",
+    githubLink: "https://github.com/imrozansari75/Weather-App",
+  },
+];
+
 
   return (
 
-    <section id="projects" className="py-20 text-white">
+    <section id="projects" className="py-6 text-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <h2 className="text-3xl text-left font-bold mb-2">My Projects</h2>
         </div>
 
@@ -69,7 +70,7 @@ const Projects = () => {
                   <button
                     variant="outline"
                     size="sm"
-                    className="transition-all duration-300 hover:bg-primary hover:text-white"
+                    className="transition-all duration-300 hover:text-white"
                   >
                     <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
                       <FaExternalLinkAlt className="mr-2 h-4 w-4" /> Live Demo
@@ -78,7 +79,7 @@ const Projects = () => {
                   <button
                     variant="outline"
                     size="sm"
-                    className="transition-all duration-300 hover:bg-primary hover:text-white"
+                    className="transition-all duration-300 hover:text-white"
                   >
                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
                       <FaGithub className="mr-2 h-4 w-4" /> Code

@@ -4,8 +4,8 @@ import Coding from "../assets/Programmer.png"
 const About = () => {
   return (
     
-      <section id="about" classNameName='flex py-4 px-8'>
-        <div className=''></div>
+      <section id="about" classNameName='flex pt-4 px-8'>
+        <div className='h-8'></div>
         {/* ______ About content ______ */}
         <div className="about-gradient flex flex-col md:flex-row items-center justify-between text-white rounded-2xl px-6 md:px-8 max-w-6xl mx-auto shadow-lg">
           <div className="md:w-2/3">

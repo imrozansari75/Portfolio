@@ -41,9 +41,9 @@ const Jobs = () => {
   return (
     <section
       id="jobs"
-      className="flex flex-col py-4 px-6 md:px-8 text-white max-w-6xl mx-auto">
-      <div className="mt-8">
-        <h2 className="text-3xl font-bold mb-6 md:px-2">My Job</h2>
+      className="flex flex-col py-2 px-6 md:px-4 text-white max-w-6xl mx-auto">
+      <div className="mt-4">
+        <h2 className="text-3xl font-bold mb-6 md:px-0">My Job</h2>
 
         {/* Outer container */}
         <div className="bg-black/40 px-6 py-6 md:px-8 rounded-2xl shadow-lg space-y-8">

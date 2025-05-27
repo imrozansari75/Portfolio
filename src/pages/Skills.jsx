@@ -16,9 +16,9 @@ const techStack = [
 const Skills = () => {
   return (
     <section id="skills" classNameName=' py-4 px-8'>
-      <div className="text-white rounded-2xl px-6 pt-6 md:px-8 max-w-6xl mx-auto">
+      <div className="text-white rounded-2xl px-6 pt-6 md:px-2 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-2">My Skill</h2>
-        <ul className="flex flex-wrap justify-center gap-6 mt-8">
+        <ul className="flex flex-wrap justify-center gap-2 mt-8">
           {techStack.map((item) => (
             <li
               key={item.id}
