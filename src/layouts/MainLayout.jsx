@@ -14,7 +14,7 @@ const MainLayout = () => {
 
         <div className="flex flex-1 h-full w-full overflow-hidden">
           {/* ______ Left Panel ______ */}
-          <div className="w-[220px] md:pl-8 border-r overflow-y-auto">
+          <div className="hidden md:block w-[220px] md:pl-8 border-r overflow-y-auto">
             <Sidebar />
           </div>
 

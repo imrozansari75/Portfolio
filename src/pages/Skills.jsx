@@ -15,14 +15,14 @@ const techStack = [
 
 const Skills = () => {
   return (
-    <section id="skills" classNameName=' py-4 px-8'>
-      <div className="text-white rounded-2xl px-6 pt-6 md:px-2 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-2">My Skill</h2>
-        <ul className="flex flex-wrap justify-center gap-2 mt-8">
+    <section id="skills" classNameName='py-4 md:px-8'>
+      <div className="text-white rounded-2xl px-0 pt-6 md:px-2 max-w-6xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2">My Skill</h2>
+        <ul className="flex flex-wrap justify-center gap-4 md:gap-2 mt-8">
           {techStack.map((item) => (
             <li
               key={item.id}
-              className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-black/40 rounded-2xl flex flex-col items-center justify-center shadow-lg transition-transform duration-300 hover:scale-105"
+              className="w-20 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-black/40 rounded-2xl flex flex-col items-center justify-center shadow-lg transition-transform duration-300 hover:scale-105"
             >
               <div>{item.icon}</div>
               <span className="mt-2 text-sm text-white text-center">{item.name}</span>
