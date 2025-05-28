@@ -1,8 +1,9 @@
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { FiExternalLink} from 'react-icons/fi'
+import { FiExternalLink } from 'react-icons/fi'
 import StockImg from '../assets/stocks.png'
 import WeatherImg from '../assets/weather.png'
+import FitnessImg from '../assets/fitClub.png'
 
 const Projects = () => {
 
@@ -11,7 +12,7 @@ const Projects = () => {
       title: "Fitness Club Website",
       description:
         "A responsive fitness club website showcasing various fitness programs, trainers, and membership plans.",
-      image: "/placeholder.svg?height=600&width=800",
+      image: FitnessImg,
       technologies: ["HTML", "CSS", "JavaScript"],
       demoLink: "https://github.com/imrozansari75/The-Fit-Club",
       githubLink: "https://github.com/imrozansari75/The-Fit-Club",
@@ -50,12 +51,13 @@ const Projects = () => {
             <div key={index}>
               <div className="bg-black/40 rounded-xl h-full flex flex-col overflow-hidden group transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
                 <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
+                  <div className="relative w-full" style={{ paddingBottom: '75%' }}>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="absolute inset-0 object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-all duration-300"></div>
                 </div>
                 <div className="flex-grow p-6">
