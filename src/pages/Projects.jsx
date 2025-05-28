@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from 'react-icons/fi'
 import StockImg from '../assets/stocks.png'
 import WeatherImg from '../assets/weather.png'
