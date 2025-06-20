@@ -8,10 +8,9 @@ const Jobs = () => {
       company: "AppX Studio",
       duration: "December 2024 – January 2025",
       responsibilities: [
-        "Component Development: Worked on enhancing and modifying existing React components to match the design specifications provided by Siddharth Audhinarayanan (Mentor, AppX Studio) through Figma files.",
-        "Code Optimization: Maintained clean and reusable code by avoiding duplication of component styling and ensuring consistency across all components.",
-        "Remote Collaboration: Completed the internship remotely, contributing 12 hours of work per week while adhering to project deadlines and mentor standards.",
-        "Technology Stack: Utilized React.js, Tailwind CSS, and Figma to deliver high-quality frontend development aligned with modern UI/UX best practices."
+        "Enhanced and optimized React components based on Figma designs provided by mentor at AppX Studio.",
+        "Maintained clean, reusable code with consistent styling using React.js and Tailwind CSS.",
+        "Contributed remotely, dedicating 12 hours/week while meeting deadlines and quality standards."
       ]
     },
     {
@@ -20,11 +19,11 @@ const Jobs = () => {
       company: "Fukui Accent Pvt. Ltd. & Tozai Safety Pvt. Ltd.",
       duration: "July 2024 – September 2024",
       responsibilities: [
-        "Worked in a shared office environment to design and develop responsive websites for both Fukui Accent Trading and Tozai Safety Pvt. Ltd.",
-        "Built and optimized user interfaces using HTML, CSS, JavaScript, Tailwind CSS, and React based on Figma designs.",
-        "Ensured seamless user experiences across devices and maintained code reusability and consistent styling across components.",
-        "Projects: Fukui Accent Website | Tozai Safety Website"
+        "Developed responsive websites for Fukui Accent Trading and Tozai Safety Pvt. Ltd. in a shared office setup.",
+        "Built and optimized UIs using HTML, CSS, JavaScript, Tailwind CSS, React, and Figma designs.",
+        "Ensured cross-device compatibility with reusable and consistently styled components."
       ]
+
     },
     {
       id: 3,
@@ -46,7 +45,7 @@ const Jobs = () => {
         <h2 className="text-2xl md:text-3xl font-bold mb-6 md:px-0">My Job</h2>
 
         {/* Outer container */}
-        <div className="bg-black/40 px-6 py-6 md:px-8 rounded-2xl shadow-lg space-y-8">
+        <div className="bg-black/40 px-6 py-6 md:px-8 rounded-3xl shadow-lg space-y-8">
           {jobExperiences.map((job) => (
             <div key={job.id}>
               {/* Title and Duration */}
@@ -63,7 +62,7 @@ const Jobs = () => {
               </div>
 
               {/* Responsibilities List */}
-              <ul className="list-disc ml-5 space-y-2 text-base leading-relaxed">
+              <ul className="list-disc ml-5 space-y-2 text-base">
                 {job.responsibilities.map((point, idx) => (
                   <li key={idx}>{point}</li>
                 ))}

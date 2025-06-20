@@ -19,9 +19,9 @@ export default function Education() {
   return (
     <section id="education" className="md:p-4 pb-8 text-white">
       <h2 className="text-2xl md:text-3xl font-bold mb-4">Education</h2>
-      <div className="space-y-4 p-8 bg-black/40 rounded-xl shadow-md">
+      <div className="space-y-4 p-8 bg-black/40 rounded-3xl shadow-md">
         {education.map((edu, index) => (
-          <div key={index} className="border-l-4 border-blue-500 pl-4">
+          <div key={index}>
             <h3 className="text-lg font-semibold">{edu.institution}</h3>
             <p className="text-sm">{edu.degree}</p>
             <p className="text-sm">{edu.result}</p>

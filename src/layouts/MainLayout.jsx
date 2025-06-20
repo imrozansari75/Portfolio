@@ -14,12 +14,12 @@ const MainLayout = () => {
 
         <div className="flex flex-1 h-full w-full overflow-hidden">
           {/* ______ Left Panel ______ */}
-          <div className="md:block sm:w-[220px] md:pl-8 border-r overflow-y-auto">
+          <div className="md:block sm:w-[250px] md:pl-8 border-r border-white/20 overflow-y-auto">
             <Sidebar />
           </div>
 
           {/* ______ Right Panel (Scrollable Only Inside This) ______ */}
-          <div className="flex-1 overflow-y-auto px-4 sm:px-10">
+          <div className="flex-1 overflow-y-auto px-4 sm:px-6">
             <About />
             <Skills />
             <Jobs />

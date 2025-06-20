@@ -19,7 +19,7 @@ const techStack = [
 const Skills = () => {
   return (
     <section id="skills" classNameName='py-4 md:px-8'>
-      <div className="text-white rounded-2xl px-0 pt-2 sm:pt-6 md:px-2 max-w-6xl mx-auto">
+      <div className="text-white rounded-3xl px-0 pt-2 sm:pt-6 md:px-2 max-w-6xl mx-auto">
         <h2 className="text-2xl sm:text-3xl font-bold mb-2">My Skill</h2>
         <ul className="flex flex-wrap justify-center gap-4 md:gap-8 mt-8">
           {techStack.map((item) => (
