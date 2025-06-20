@@ -8,18 +8,18 @@ import Education from '../pages/Education'
 
 const MainLayout = () => {
   return (
-    <main className="h-screen px-0 md:px-32 py-4 flex flex-col">
+   <main className="px-2 md:px-32 py-4 flex flex-col h-screen overflow-y-auto custom-scrollbar">
       <div className="flex-1 rounded-3xl bg-black/30 flex flex-col overflow-hidden">
         <Header />
 
         <div className="flex flex-1 h-full w-full overflow-hidden">
           {/* ______ Left Panel ______ */}
-          <div className="hidden md:block w-[220px] md:pl-8 border-r overflow-y-auto">
+          <div className="md:block sm:w-[220px] md:pl-8 border-r overflow-y-auto">
             <Sidebar />
           </div>
 
           {/* ______ Right Panel (Scrollable Only Inside This) ______ */}
-          <div className="flex-1 overflow-y-auto px-10">
+          <div className="flex-1 overflow-y-auto px-4 sm:px-10">
             <About />
             <Skills />
             <Jobs />

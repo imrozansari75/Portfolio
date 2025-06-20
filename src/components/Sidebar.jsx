@@ -78,21 +78,21 @@ const Sidebar = () => {
     const [isSocailOpen, setIsSocailOpen] = useState(true);
 
     return (
-        <div className="flex flex-col text-white pt-6 pl-4 md:pl-2">
+        <div className="flex flex-col text-white sm:pt-6 px-4 sm:pl-4 md:pl-2">
             {/* Category Dropdown */}
             <div className="flex flex-col">
                 <div onClick={() => setIsCategoryOpen(!isCategoryOpen)}
                     className="cursor-pointer text-xl font-semibold">
-                    <span>Category</span>
+                    <span className='hidden sm:block'>Category</span>
                 </div>
 
                 <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isCategoryOpen ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
-                    <ul className="space-y-2 pl-3 text-lg">
+                    <ul className="space-y-3 sm:pl-3 text-lg">
                         {CategortMenu.map((item) => (
                             <li key={item.id} className="flex items-center gap-4 cursor-pointer">
                                 <HashLink smooth to={item.to} className="flex items-center gap-2">
                                     {item.icon}
-                                    <span>{item.name}</span>
+                                    <span className='hidden sm:block'>{item.name}</span>
                                 </HashLink>
                             </li>
                         ))}
@@ -101,26 +101,25 @@ const Sidebar = () => {
             </div>
 
             {/* Social Links Dropdown */}
-            <div className="flex flex-col">
+            <div className="flex flex-col pt-4 sm:pt-0">
                 <div onClick={() => setIsSocailOpen(!isSocailOpen)}
                     className="mt-4 cursor-pointer text-xl font-semibold">
-                    <span>Social Link</span>
+                    <span className='hidden sm:block'>Social Link</span>
                 </div>
 
                 <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isSocailOpen ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
-                    <ul className="space-y-2 pl-3 text-lg">
+                    <ul className="space-y-3 sm:pl-3 text-lg">
                         {socialLink.map((link) => (
                             <li key={link.id} className="flex items-center gap-4 cursor-pointer">
-                                <a
+                                <HashLink
                                     key={link.id}
-                                    href={link.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    to={link.href}
+                                    smooth
                                     className="flex items-center gap-2 text-white"
                                 >
                                     {link.icon}
-                                    {link.name}
-                                </a>
+                                    <span className="hidden sm:block">{link.name}</span>
+                                </HashLink>
                             </li>
                         ))}
                     </ul>

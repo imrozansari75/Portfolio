@@ -40,7 +40,7 @@ const Projects = () => {
 
   return (
 
-    <section id="projects" className="py-6 text-white">
+    <section id="projects" className="py-2 sm:py-6 text-white">
       <div className="container mx-auto md:px-4">
         <div className="text-center mb-6">
           <h2 className="text-2xl md:text-3xl text-left font-bold mb-2">My Projects</h2>
