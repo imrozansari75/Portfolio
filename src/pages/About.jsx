@@ -16,14 +16,18 @@ const About = () => {
             applications using modern technologies like Tailwind CSS and JavaScript. Eager to contribute my skills to
             a dynamic team and continue growing in the software development field.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-full transition duration-300">
-            <a
-              href={resume}
-              download
-            >
+          <button
+            className="text-white font-semibold px-4 py-2 rounded-full transition duration-300"
+            style={{
+              background: 'linear-gradient(135deg, #22d3ee, #60a5fa)',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            <a href={resume} download>
               Download Resume
             </a>
           </button>
+
         </div>
 
         <div className="mt-8 md:mt-0 md:w-1/3 flex justify-center">
