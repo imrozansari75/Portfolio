@@ -78,7 +78,7 @@ const Sidebar = () => {
     const [isSocailOpen, setIsSocailOpen] = useState(true);
 
     return (
-        <div className="flex flex-col text-white sm:pt-6 px-4 sm:pl-4 md:pl-2">
+        <div className="flex flex-col text-white sm:pt-6 px-4 sm:pl-4 md:pl-0">
             {/* Category Dropdown */}
             <div className="flex flex-col">
                 <div onClick={() => setIsCategoryOpen(!isCategoryOpen)}

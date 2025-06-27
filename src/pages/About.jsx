@@ -7,7 +7,7 @@ const About = () => {
     <section id="about" classNameName='flex pt-4 md:px-8'>
       <div className='h-4 sm:h-8'></div>
       {/* ______ About content ______ */}
-      <div className="about-gradient flex flex-col md:flex-row items-center justify-between text-white rounded-2xl px-6 py-4 md:px-8 sm:max-w-6xl mx-auto shadow-lg">
+      <div className="about-gradient flex flex-col sm:flex-row items-center justify-between text-white rounded-2xl px-6 py-4 md:px-8 sm:max-w-6xl mx-auto shadow-lg">
         <div className="md:w-2/3">
           <h2 className="text-2xl md:text-3xl font-bold mb-2">Imroz Ansari</h2>
           <p className="text-base md:text-sm leading-relaxed mb-6">
@@ -25,6 +25,7 @@ const About = () => {
             </a>
           </button>
         </div>
+
         <div className="mt-8 md:mt-0 md:w-1/3 flex justify-center">
           <img src={Coding} alt="Developer at desk" className="w-60 max-w-full" />
         </div>

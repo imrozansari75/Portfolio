@@ -5,7 +5,7 @@ export default function Education() {
     {
       institution: "Nagindas Khandwala College",
       degree: "B.Sc. in Information Technology",
-      result: "CGPA: 8.64",
+      result: "CGPA: 8.82",
       year: "2023 - 2026",
     },
     {

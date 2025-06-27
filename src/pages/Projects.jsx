@@ -26,7 +26,7 @@ const Projects = () => {
       <div>
         <h2 className="text-3xl font-bold mb-8">My Jobs</h2>
 
-        <div className="px-0 rounded-2xl shadow-lg flex gap-6">
+        <div className="px-0 rounded-2xl flex gap-6">
           {projects.map((project) => (
             <div
               key={project.id}
