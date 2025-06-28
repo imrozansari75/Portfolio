@@ -22,9 +22,10 @@ const Projects = () => {
 
 
   return (
-    <section id="projects" className="flex flex-col py-10 px-4 text-white max-w-6xl mx-auto">
-      <div>
-        <h2 className="text-3xl font-bold mb-8">My Jobs</h2>
+    <section id="projects"
+      className="flex flex-col py-2 px-0 md:px-4 text-white max-w-6xl mx-auto">
+      <div className="sm:mt-4">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 md:px-0">My Projects</h2>
 
         <div className="px-0 rounded-2xl flex gap-6">
           {projects.map((project) => (
